@@ -1,2 +1,12 @@
-# worldcoin-precompiled
-Precompiled worldcoin JS libraries increasing compatibility.
+# Worldcoin Precompiled
+
+## Development
+
+```
+npm run-script build
+```
+
+```
+npm publish --access public
+```
+
