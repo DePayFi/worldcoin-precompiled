@@ -36,7 +36,8 @@ export default {
     resolve(),
     babel({
       babelHelpers: 'bundled',
-      presets: ["@babel/preset-env"]
+      presets: ["@babel/preset-env"],
+      plugins: ["transform-vite-meta-env"]
     }),
     nodeResolve({
       browser: true,
