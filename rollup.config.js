@@ -22,7 +22,10 @@ export default {
       file: 'dist/umd/index.js',
     },
   ],
-  external: [],
+  external: [
+    ...Object.keys(pkg.dependencies || {}),
+    ...Object.keys(pkg.peerDependencies || {})
+  ],
   treeshake: {
     moduleSideEffects: false,
   },
