@@ -5,7 +5,6 @@ import json from '@rollup/plugin-json'
 import nodePolyfills from 'rollup-plugin-polyfill-node'
 import pkg from './package.json'
 import replace from '@rollup/plugin-replace'
-import resolve from '@rollup/plugin-node-resolve'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 
 export default {
@@ -33,7 +32,6 @@ export default {
     }),
     json(),
     nodePolyfills(),
-    resolve(),
     babel({
       babelHelpers: 'bundled',
       presets: ["@babel/preset-env"],
