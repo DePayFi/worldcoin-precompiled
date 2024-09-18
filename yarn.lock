@@ -1207,7 +1207,7 @@
   dependencies:
     "@types/node" "*"
 
-"@worldcoin/idkit-core@^1.2.2", "@worldcoin/idkit-core@^1.3.0":
+"@worldcoin/idkit-core@^1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@worldcoin/idkit-core/-/idkit-core-1.3.0.tgz#02aa3410ce88006c6c7780159fc932cfc8b95323"
   integrity sha512-HAgaZl8rmKq5aKeNAOXIbvhDwtpxTM4Wsy8F26LH1vMBgTe3tx/wHXmV7jsNl1p2k8XRhGmrAdqeRVK5QPhBfg==
@@ -1217,17 +1217,24 @@
     viem "^2.17.0"
     zustand "^4.5"
 
-"@worldcoin/minikit-js@^0.0.27-internal-alpha":
-  version "0.0.27-internal-alpha"
-  resolved "https://registry.yarnpkg.com/@worldcoin/minikit-js/-/minikit-js-0.0.27-internal-alpha.tgz#3d71bfcef25d339fa0e7829d4096066fcf4b9c1b"
-  integrity sha512-nAmzd3Uzvms9+A85NJdCK7pRrrQ35lQ1oJc5xi2HErKt0NTYI+RfC7Ueny5Wil/6+qGV6no1e2/2grkTRrqYOA==
+"@worldcoin/minikit-js@^0.0.28-internal-alpha":
+  version "0.0.28-internal-alpha"
+  resolved "https://registry.yarnpkg.com/@worldcoin/minikit-js/-/minikit-js-0.0.28-internal-alpha.tgz#057b20bd5bd24c659543fa4057ab6673779c6a8c"
+  integrity sha512-JiY0zgYMWQmHf1MJLx3XUNeHTW3mgRKmcYCLn04L11iIBbb5rYCufJQGEsOPEKnSn7sbladh1XCqqdYvE8WSMg==
   dependencies:
-    "@worldcoin/idkit-core" "^1.2.2"
+    "@worldcoin/idkit-core" "^1.3.0"
+    abitype "^1.0.6"
+    turbo "^2.1.1"
 
 abitype@1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/abitype/-/abitype-1.0.5.tgz#29d0daa3eea867ca90f7e4123144c1d1270774b6"
   integrity sha512-YzDhti7cjlfaBhHutMaboYB21Ha3rXR9QTkNJFzYC4kC8YclaiwPBBBJY8ejFdu2wnJeZCVZSMlQJ7fi8S6hsw==
+
+abitype@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/abitype/-/abitype-1.0.6.tgz#76410903e1d88e34f1362746e2d407513c38565b"
+  integrity sha512-MMSqYh4+C/aVqI2RQaWqbvI4Kxo5cQV40WQ4QFtDnNzCkqChm8MuENhElmynZlO0qUy/ObkEUaXtKqYnx1Kp3A==
 
 aes-js@4.0.0-beta.5:
   version "4.0.0-beta.5"
@@ -1970,6 +1977,48 @@ tslib@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
+
+turbo-darwin-64@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/turbo-darwin-64/-/turbo-darwin-64-2.1.2.tgz#a694b4db22ab04a2d67b3b2c96fc11780af1c8ee"
+  integrity sha512-3TEBxHWh99h2yIzkuIigMEOXt/ItYQp0aPiJjPd1xN4oDcsKK5AxiFKPH9pdtfIBzYsY59kQhZiFj0ELnSP7Bw==
+
+turbo-darwin-arm64@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/turbo-darwin-arm64/-/turbo-darwin-arm64-2.1.2.tgz#5a999ce271b9643cc0e535feb9d77c4b922e6de7"
+  integrity sha512-he0miWNq2WxJzsH82jS2Z4MXpnkzn9SH8a79iPXiJkq25QREImucscM4RPasXm8wARp91pyysJMq6aasD45CeA==
+
+turbo-linux-64@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/turbo-linux-64/-/turbo-linux-64-2.1.2.tgz#18e8c23d4bd8351c161994aef57f3948db3e8036"
+  integrity sha512-fKUBcc0rK8Vdqv5a/E3CSpMBLG1bzwv+Q0Q83F8fG2ZfNCNKGbcEYABdonNZkkx141Rj03cZQFCgxu3MVEGU+A==
+
+turbo-linux-arm64@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/turbo-linux-arm64/-/turbo-linux-arm64-2.1.2.tgz#e6879fd0a9e37d7d4080ba34ef0c32354c08c4e8"
+  integrity sha512-sV8Bpmm0WiuxgbhxymcC7wSsuxfBBieI98GegSwbr/bs1ANAgzCg93urIrdKdQ3/b31zZxQwcaP4FBF1wx1Qdg==
+
+turbo-windows-64@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/turbo-windows-64/-/turbo-windows-64-2.1.2.tgz#be6b8429beba956fabcbda06402fb89d1796aa2e"
+  integrity sha512-wcmIJZI9ORT9ykHGliFE6kWRQrlH930QGSjSgWC8uFChFFuOyUlvC7ttcxuSvU9VqC7NF4C+GVAcFJQ8lTjN7g==
+
+turbo-windows-arm64@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/turbo-windows-arm64/-/turbo-windows-arm64-2.1.2.tgz#8d3fa5e49cd7c54d7af4efe180c608ff1f03ac45"
+  integrity sha512-zdnXjrhk7YO6CP+Q5wPueEvOCLH4lDa6C4rrwiakcWcPgcQGbVozJlo4uaQ6awo8HLWQEvOwu84RkWTdLAc/Hw==
+
+turbo@^2.1.1:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/turbo/-/turbo-2.1.2.tgz#c3b2e533977055458f70cc879c3d2a334a0f2469"
+  integrity sha512-Jb0rbU4iHEVQ18An/YfakdIv9rKnd3zUfSE117EngrfWXFHo3RndVH96US3GsT8VHpwTncPePDBT2t06PaFLrw==
+  optionalDependencies:
+    turbo-darwin-64 "2.1.2"
+    turbo-darwin-arm64 "2.1.2"
+    turbo-linux-64 "2.1.2"
+    turbo-linux-arm64 "2.1.2"
+    turbo-windows-64 "2.1.2"
+    turbo-windows-arm64 "2.1.2"
 
 tweetnacl@^1.0.0:
   version "1.0.3"
