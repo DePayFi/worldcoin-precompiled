@@ -1,5 +1,6 @@
-import { MiniKit } from "@worldcoin/minikit-js"
+import { MiniKit, ResponseEvent } from "@worldcoin/minikit-js"
 
 export {
   MiniKit,
+  ResponseEvent,
 }
