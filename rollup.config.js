@@ -1,3 +1,4 @@
+import alias from '@rollup/plugin-alias'
 import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import globals from './rollup.globals.js'
@@ -23,13 +24,22 @@ export default {
     },
   ],
   external: [
-    ...Object.keys(pkg.dependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {})
   ],
   treeshake: {
     moduleSideEffects: false,
   },
   plugins: [
+    alias({
+      entries: [
+        { find: 'react', replacement: './empty-module.js' },
+      ],
+    }),
+    nodeResolve({
+      browser: true,
+      dedupe: ['bn.js', 'buffer'],
+      extensions: ['.js','.ts'],
+      preferBuiltins: false
+    }),
     commonjs({
       transformMixedEsModules: true
     }),
@@ -39,12 +49,6 @@ export default {
       babelHelpers: 'bundled',
       presets: ["@babel/preset-env"],
       plugins: ["transform-vite-meta-env"]
-    }),
-    nodeResolve({
-      browser: true,
-      dedupe: ['bn.js', 'buffer'],
-      extensions: ['.js','.ts'],
-      preferBuiltins: false
     }),
     replace({
       preventAssignment: true,
