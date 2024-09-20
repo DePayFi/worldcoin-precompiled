@@ -57,7 +57,8 @@ export default {
       'process.env.BROWSER': JSON.stringify('true'),
       'process.env.npm_package_version': JSON.stringify(
         process.env.npm_package_version,
-      )
+      ),
+      'process.env': '{}',
     }),
   ]
 }
