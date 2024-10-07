@@ -1,7 +1,7 @@
 {
   "name": "@depay/worldcoin-precompiled",
   "moduleName": "WorldcoinPrecompiled",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "description": "Precompiled worldcoin JS rollup increasing compatibility.",
   "main": "dist/umd/index.js",
   "module": "dist/esm/index.js",
@@ -44,9 +44,6 @@
     "tweetnacl": "^1.0.0",
     "viem": "^2.17.0",
     "zustand": "^4.5"
-  },
-  "peerDependencies": {
-    "ethers": "^6.0.8"
   },
   "dependencies": {
     "@rollup/plugin-alias": "^5.1.0"
